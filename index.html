@@ -12,6 +12,7 @@
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -150,6 +151,35 @@ https://templatemo.com/tm-590-topic-listing
                 transform: translateX(0);
             }
         }
+
+        .small-li li {
+            font-size: 14px;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .card-icon {
+            font-size: 28px;
+            /* normal size */
+            color: #13547a;
+            transition: transform 0.3s ease, color 0.3s ease;
+            margin-right: 6px;
+            /* spacing from text */
+        }
+
+        .card-icon:hover {
+            color: #0a3b57;
+            /* your primary color */
+            transform: scale(1.2);
+            /* zoom-in effect */
+        }
+
+
+        .custom-block p {
+            font-size: 14px;
+            /* adjust aspxeeded */
+            margin-bottom: 8px;
+        }
     </style>
 
 </head>
@@ -176,23 +206,23 @@ https://templatemo.com/tm-590-topic-listing
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-lg-5 me-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            <a class="nav-link click-scroll" href="#home">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">Services</a>
+                            <a class="nav-link click-scroll" href="#services">Services</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">About</a>
+                            <a class="nav-link click-scroll" href="#about">About</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Use Case</a>
+                            <a class="nav-link click-scroll" href="#usecases">Use Case</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                            <a class="nav-link click-scroll" href="#contact">Contact</a>
                         </li>
                     </ul>
 
@@ -203,7 +233,7 @@ https://templatemo.com/tm-590-topic-listing
         </nav>
 
 
-        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+        <section class="hero-section d-flex justify-content-center align-items-center" id="home">
             <div class="container">
                 <div class="row align-items-center">
 
@@ -228,51 +258,73 @@ https://templatemo.com/tm-590-topic-listing
             </div>
         </section>
 
-
         <section class="featured-section">
             <div class="container">
                 <div class="row justify-content-center">
 
+                    <!-- Business Value -->
                     <div class="col-lg-4 col-12 mb-4 mb-lg-0">
                         <div class="custom-block bg-white shadow-lg">
-                            <a href="topics-detail.html">
-                                <div class="d-flex">
-                                    <div>
-                                        <h5 class="mb-2">Data & Analytics</h5>
-                                        <p class="mb-0">Turn raw data into actionable insights with SAP HANA Cloud and
-                                            SAP Analytics powered by BTP.</p>
-                                    </div>
-                                    <span class="badge bg-design rounded-pill ms-auto">14</span>
+                            <div class="d-flex">
+                                <div>
+                                    <h5 class="mb-2">Business Value</h5>
+                                    <p class="mb-0">
+                                        At <strong>BTPLogiK</strong>, we help clients unlock measurable value by
+                                        aligning
+                                        technology with business goals. From reducing costs to accelerating
+                                        innovation,
+                                        our solutions ensure every digital investment drives growth, efficiency, and
+                                        resilience.
+                                    </p>
                                 </div>
-                                <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
-                                    class="custom-block-image img-fluid" alt="Data and Analytics Illustration">
-                            </a>
+                            </div>
+                            <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                                class="custom-block-image img-fluid" alt="Business Value Illustration">
                         </div>
                     </div>
 
+                    <!-- SAP Edition -->
                     <div class="col-lg-6 col-12">
                         <div class="custom-block custom-block-overlay">
                             <div class="d-flex flex-column h-100">
                                 <img src="images/businesswoman-using-tablet-analysis.jpg"
-                                    class="custom-block-image img-fluid" alt="Process Automation">
+                                    class="custom-block-image img-fluid" alt="SAP Edition">
 
                                 <div class="custom-block-overlay-text d-flex">
                                     <div>
-                                        <h5 class="text-white mb-2">Process Automation</h5>
-                                        <p class="text-white">Automate workflows, streamline operations, and empower
-                                            your business users with no-code/low-code SAP BTP tools.</p>
-                                        <a href="topics-detail.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+                                        <h5 class="text-white mb-2">SAP Edition</h5>
+                                        <p class="text-white">
+                                            Maximize your SAP investments with the power of <strong>SAP Business
+                                                Technology Platform</strong>.
+                                            From seamless integrations and intelligent data management to AI-driven
+                                            insights and
+                                            extensions, BTPLogiK ensures your SAP ecosystem is <strong>secure, scalable,
+                                                and future-ready</strong>.
+                                        </p>
+
+                                        <a href="mailto:hallo@btplogik.com" class="btn custom-btn mt-2 mt-lg-3">Let's
+                                            Connect!</a>
                                     </div>
-                                    <span class="badge bg-finance rounded-pill ms-auto">25</span>
                                 </div>
 
+                                <!-- Social Share -->
                                 <div class="social-share d-flex">
-                                    <p class="text-white me-4">Share:</p>
+                                    <!-- <p class="text-white mt-2 me-4">Share:</p> -->
+                                    <p class="text-center text-white me-3 mb-2">Share:</p>
+
                                     <ul class="social-icon">
-                                        <li class="social-icon-item"><a href="#"
-                                                class="social-icon-link bi-twitter"></a></li>
-                                        <li class="social-icon-item"><a href="#"
-                                                class="social-icon-link bi-facebook"></a></li>
+                                        <li class="social-icon-item">
+                                            <a href="https://www.linkedin.com" target="_blank"
+                                                class="social-icon-link bi-linkedin"></a>
+                                        </li>
+                                        <li class="social-icon-item">
+                                            <a href="https://www.facebook.com" target="_blank"
+                                                class="social-icon-link bi-facebook"></a>
+                                        </li>
+                                        <li class="social-icon-item">
+                                            <a href="https://www.instagram.com" target="_blank"
+                                                class="social-icon-link bi-instagram"></a>
+                                        </li>
                                     </ul>
                                 </div>
 
@@ -286,7 +338,7 @@ https://templatemo.com/tm-590-topic-listing
         </section>
 
 
-        <section class="explore-section section-padding" id="section_2">
+        <section class="explore-section section-padding" id="services">
             <div class="container">
                 <div class="col-12 text-center">
                     <h2 class="mb-4">Our Services</h2>
@@ -297,24 +349,24 @@ https://templatemo.com/tm-590-topic-listing
                 <div class="row">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="music-tab" data-bs-toggle="tab"
-                                data-bs-target="#music-tab-pane" type="button" role="tab" aria-controls="music-tab-pane"
-                                aria-selected="false">Strategy & Architecture</button>
+                            <button class="nav-link active" id="strategy-tab" data-bs-toggle="tab"
+                                data-bs-target="#strategy-tab-pane" type="button" role="tab"
+                                aria-controls="strategy-tab-pane" aria-selected="false">Strategy & Architecture</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="finance-tab" data-bs-toggle="tab"
-                                data-bs-target="#finance-tab-pane" type="button" role="tab"
-                                aria-controls="finance-tab-pane" aria-selected="false">Security</button>
+                            <button class="nav-link" id="security-tab" data-bs-toggle="tab"
+                                data-bs-target="#security-tab-pane" type="button" role="tab"
+                                aria-controls="security-tab-pane" aria-selected="false">Security</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="design-tab" data-bs-toggle="tab"
-                                data-bs-target="#design-tab-pane" type="button" role="tab"
-                                aria-controls="design-tab-pane" aria-selected="true">Apps & Integration</button>
+                            <button class="nav-link" id="apps-tab" data-bs-toggle="tab" data-bs-target="#apps-tab-pane"
+                                type="button" role="tab" aria-controls="apps-tab-pane" aria-selected="true">Apps &
+                                Integration</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="marketing-tab" data-bs-toggle="tab"
-                                data-bs-target="#marketing-tab-pane" type="button" role="tab"
-                                aria-controls="marketing-tab-pane" aria-selected="false">SAP Core AI</button>
+                            <button class="nav-link" id="sap-ai-tab" data-bs-toggle="tab"
+                                data-bs-target="#sap-ai-tab-pane" type="button" role="tab"
+                                aria-controls="sap-ai-tab-pane" aria-selected="false">SAP Core AI</button>
                         </li>
                     </ul>
                 </div>
@@ -325,228 +377,193 @@ https://templatemo.com/tm-590-topic-listing
                     <div class="col-12">
                         <div class="tab-content" id="myTabContent">
 
-                            <!-- Apps & Integration -->
-                            <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel"
-                                aria-labelledby="design-tab" tabindex="0">
+                            <!-- Strategy & Architecture -->
+                            <div class="tab-pane fade show active" id="strategy-tab-pane" role="tabpanel"
+                                aria-labelledby="strategy-tab" tabindex="0">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Application Development</h5>
-                                                        <p class="mb-0">Build, deploy, and scale apps faster with SAP
-                                                            BTP’s Cloud Foundry and Kyma runtimes.</p>
-                                                    </div>
-                                                    <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                </div>
-                                                <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-cloud card-icon"></i>
+                                            <h5 class="mb-2">Cloud Strategy</h5>
+                                            <p>Define your digital transformation roadmap.</p>
+                                            <ul class="small-li text-start">
+                                                <li>Cloud adoption framework</li>
+                                                <li>Hybrid & multi-cloud models</li>
+                                                <li>Cost optimization planning</li>
+                                                <li>Future-proof architecture</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">System Integration</h5>
-                                                        <p class="mb-0">Seamlessly connect SAP and non-SAP systems using
-                                                            SAP Integration Suite.</p>
-                                                    </div>
-                                                    <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                </div>
-                                                <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-building card-icon"></i>
+                                            <h5 class="mb-2">Enterprise Architecture</h5>
+                                            <p>Design scalable SAP BTP solutions.</p>
+                                            <ul class="small-li text-start">
+                                                <li>Landscape modernization</li>
+                                                <li>Business process alignment</li>
+                                                <li>API & integration strategy</li>
+                                                <li>Performance optimization</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Workflow Automation</h5>
-                                                        <p class="mb-0">Digitize and automate complex processes with SAP
-                                                            Workflow Management.</p>
-                                                    </div>
-                                                    <span class="badge bg-design rounded-pill ms-auto">100</span>
-                                                </div>
-                                                <img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- SAP Core AI -->
-                            <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel"
-                                aria-labelledby="marketing-tab" tabindex="0">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">AI Services</h5>
-                                                        <p class="mb-0">Embed intelligence with pre-trained SAP AI
-                                                            services and custom ML models.</p>
-                                                    </div>
-                                                    <span class="badge bg-advertising rounded-pill ms-auto">30</span>
-                                                </div>
-                                                <img src="images/topics/undraw_online_ad_re_ol62.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Predictive Analytics</h5>
-                                                        <p class="mb-0">Leverage machine learning to forecast trends and
-                                                            optimize business decisions.</p>
-                                                    </div>
-                                                    <span class="badge bg-advertising rounded-pill ms-auto">65</span>
-                                                </div>
-                                                <img src="images/topics/undraw_Group_video_re_btu7.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-12">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Conversational AI</h5>
-                                                        <p class="mb-0">Enable chatbots and digital assistants with SAP
-                                                            Conversational AI.</p>
-                                                    </div>
-                                                    <span class="badge bg-advertising rounded-pill ms-auto">50</span>
-                                                </div>
-                                                <img src="images/topics/undraw_viral_tweet_gndb.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-sitemap card-icon"></i>
+                                            <h5 class="mb-2">Governance</h5>
+                                            <p>Ensure security, compliance, and agility.</p>
+                                            <ul class="small-li text-start">
+                                                <li>Cloud governance framework</li>
+                                                <li>Risk & compliance policies</li>
+                                                <li>Performance benchmarking</li>
+                                                <li>Standardized practices</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Security -->
-                            <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel"
-                                aria-labelledby="finance-tab" tabindex="0">
+                            <div class="tab-pane fade" id="security-tab-pane" role="tabpanel"
+                                aria-labelledby="security-tab" tabindex="0">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Identity & Access</h5>
-                                                        <p class="mb-0">Ensure secure access with SAP Identity
-                                                            Authentication and Identity Provisioning services.</p>
-                                                    </div>
-                                                    <span class="badge bg-finance rounded-pill ms-auto">30</span>
-                                                </div>
-                                                <img src="images/topics/undraw_Finance_re_gnv2.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-user-shield card-icon"></i>
+                                            <h5 class="mb-2">Identity & Access</h5>
+                                            <p>Secure user authentication and authorization.</p>
+                                            <ul class="small-li text-start">
+                                                <li>SAP Identity Authentication</li>
+                                                <li>Single sign-on (SSO)</li>
+                                                <li>Role-based access control</li>
+                                                <li>Multi-factor authentication</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="custom-block custom-block-overlay">
-                                            <div class="d-flex flex-column h-100">
-                                                <img src="images/businesswoman-using-tablet-analysis-graph-company-finance-strategy-statistics-success-concept-planning-future-office-room.jpg"
-                                                    class="custom-block-image img-fluid" alt="">
-
-                                                <div class="custom-block-overlay-text d-flex">
-                                                    <div>
-                                                        <h5 class="text-white mb-2">Compliance & Security</h5>
-                                                        <p class="text-white">Stay compliant and resilient with BTP’s
-                                                            enterprise-grade security, monitoring, and audit features.
-                                                        </p>
-                                                        <a href="topics-detail.html"
-                                                            class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
-                                                    </div>
-                                                    <span class="badge bg-finance rounded-pill ms-auto">25</span>
-                                                </div>
-
-                                                <div class="social-share d-flex">
-                                                    <p class="text-white me-4">Share:</p>
-                                                    <ul class="social-icon">
-                                                        <li class="social-icon-item"><a href="#"
-                                                                class="social-icon-link bi-twitter"></a></li>
-                                                        <li class="social-icon-item"><a href="#"
-                                                                class="social-icon-link bi-facebook"></a></li>
-                                                        <li class="social-icon-item"><a href="#"
-                                                                class="social-icon-link bi-pinterest"></a></li>
-                                                    </ul>
-                                                    <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
-                                                </div>
-
-                                                <div class="section-overlay"></div>
-                                            </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-shield-halved card-icon"></i>
+                                            <h5 class="mb-2">Compliance & Security</h5>
+                                            <p>Enterprise-grade protection and governance.</p>
+                                            <ul class="small-li text-start">
+                                                <li>Regulatory compliance tools</li>
+                                                <li>Continuous monitoring</li>
+                                                <li>Audit and logging</li>
+                                                <li>Data encryption at rest & transit</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-bug card-icon"></i>
+                                            <h5 class="mb-2">Threat Protection</h5>
+                                            <p>Mitigate risks with proactive security controls.</p>
+                                            <ul class="small-li text-start">
+                                                <li>Intrusion detection</li>
+                                                <li>Vulnerability management</li>
+                                                <li>Security event correlation</li>
+                                                <li>Automated response mechanisms</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Strategy & Architecture -->
-                            <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab"
+                            <!-- Apps & Integration -->
+                            <div class="tab-pane fade" id="apps-tab-pane" role="tabpanel" aria-labelledby="apps-tab"
                                 tabindex="0">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Cloud Strategy</h5>
-                                                        <p class="mb-0">Define your SAP BTP adoption roadmap with a
-                                                            tailored architecture strategy.</p>
-                                                    </div>
-                                                    <span class="badge bg-music rounded-pill ms-auto">45</span>
-                                                </div>
-                                                <img src="images/topics/undraw_Compose_music_re_wpiw.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-code card-icon"></i>
+                                            <h5 class="mb-2">App Development</h5>
+                                            <p>Accelerate innovation with cloud-native runtimes.</p>
+                                            <ul class="small-li text-start">
+                                                <li>Cloud Foundry & Kyma support</li>
+                                                <li>Faster deployment cycles</li>
+                                                <li>Enterprise-grade scalability</li>
+                                                <li>Low-code/no-code options</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Enterprise Architecture</h5>
-                                                        <p class="mb-0">Modernize landscapes and design scalable SAP BTP
-                                                            solutions for the future.</p>
-                                                    </div>
-                                                    <span class="badge bg-music rounded-pill ms-auto">45</span>
-                                                </div>
-                                                <img src="images/topics/undraw_happy_music_g6wc.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-network-wired card-icon"></i>
+                                            <h5 class="mb-2">System Integration</h5>
+                                            <p>Seamless connectivity for hybrid landscapes.</p>
+                                            <ul class="small-li text-start">
+                                                <li>SAP Integration Suite</li>
+                                                <li>API-led connectivity</li>
+                                                <li>Real-time data exchange</li>
+                                                <li>Event-driven integration</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Governance</h5>
-                                                        <p class="mb-0">Establish strong cloud governance with security,
-                                                            compliance, and performance standards.</p>
-                                                    </div>
-                                                    <span class="badge bg-music rounded-pill ms-auto">20</span>
-                                                </div>
-                                                <img src="images/topics/undraw_Podcast_audience_re_4i5q.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-gears card-icon"></i>
+                                            <h5 class="mb-2">Workflow Automation</h5>
+                                            <p>Digitize and automate critical processes.</p>
+                                            <ul class="small-li text-start">
+                                                <li>SAP Workflow Management</li>
+                                                <li>Business rules automation</li>
+                                                <li>End-to-end process visibility</li>
+                                                <li>Seamless task approvals</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- SAP Core AI -->
+                            <div class="tab-pane fade" id="sap-ai-tab-pane" role="tabpanel" aria-labelledby="sap-ai-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-brain card-icon"></i>
+                                            <h5 class="mb-2">AI Services</h5>
+                                            <p>Embed intelligence into enterprise apps.</p>
+                                            <ul class="small-li text-start">
+                                                <li>Pre-trained AI models</li>
+                                                <li>Custom ML deployment</li>
+                                                <li>Natural language processing</li>
+                                                <li>AI APIs for developers</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-chart-line card-icon"></i>
+                                            <h5 class="mb-2">Predictive Analytics</h5>
+                                            <p>Leverage data to forecast business outcomes.</p>
+                                            <ul class="small-li text-start">
+                                                <li>Machine learning models</li>
+                                                <li>Trend forecasting</li>
+                                                <li>Data-driven optimization</li>
+                                                <li>Scenario simulation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg p-4 h-100 text-center">
+                                            <i class="fa-solid fa-comments card-icon"></i>
+                                            <h5 class="mb-2">Conversational AI</h5>
+                                            <p>Engage customers with AI-powered chatbots.</p>
+                                            <ul class="small-li text-start">
+                                                <li>SAP Conversational AI</li>
+                                                <li>24/7 virtual assistants</li>
+                                                <li>Multi-language support</li>
+                                                <li>Seamless omnichannel integration</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
 
                         </div><!-- end tab-content -->
                     </div>
@@ -555,7 +572,8 @@ https://templatemo.com/tm-590-topic-listing
         </section>
 
 
-        <section class="timeline-section section-padding" id="about_section">
+
+        <section class="timeline-section section-padding" id="about">
             <div class="section-overlay"></div>
             <div class="container">
                 <div class="row">
@@ -694,7 +712,7 @@ https://templatemo.com/tm-590-topic-listing
             </div>
         </section> -->
 
-        <section class="usecase-section section-padding" id="section_4">
+        <section class="usecase-section section-padding" id="usecases">
             <div class="container">
                 <div class="row align-items-center">
 
@@ -783,148 +801,161 @@ https://templatemo.com/tm-590-topic-listing
         </script>
 
 
-
-        <section class="contact-section section-padding section-bg" id="section_5">
+        <section class="contact-section section-padding bg-gray-100" id="contact">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-3">Get in Touch</h2>
+                        <p class="text-muted">We’d love to hear from you! Whether you have a question or need support,
+                            reach out anytime.</p>
+                    </div>
+                </div>
 
-                    <div class="col-lg-12 col-12 text-center">
-                        <h2 class="mb-5">Get in touch</h2>
+                <div class="row g-4 align-items-stretch">
+                    <!-- Map -->
+                    <div class="col-lg-6 col-12">
+                        <div class="card shadow-sm border-0 h-100">
+                            <iframe class="rounded-3"
+                                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d27226.19402865181!2d74.25274081888973!3d31.461641074784232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s74%20G%20Johar%20Town%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1758562777300!5m2!1sen!2s"
+                                width="100%" height="100%" style="border:0; min-height: 320px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
                     </div>
 
-                    <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                        <iframe class="google-map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.065641062665!2d-122.4230416990949!3d37.80335401520422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858127459fabad%3A0x808ba520e5e9edb7!2sFrancisco%20Park!5e1!3m2!1sen!2sth!4v1684340239744!5m2!1sen!2sth"
-                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Contact Info -->
+                    <div class="col-lg-5 col-12 ms-lg-auto">
+                        <div class="card shadow-sm border-0 h-100 p-4 d-flex flex-column justify-content-center">
+                            <h4 class="fw-semibold mb-3">Head Office</h4>
+                            <p class="mb-4 text-muted">Johar Town, Lahore, Pakistan</p>
+
+                            <div class="mb-3">
+                                <p class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-telephone me-2 text-primary"></i>
+                                    <a href="tel:3052409671" class="text-decoration-none text-dark">+92 305 240 9671</a>
+                                </p>
+                            </div>
+
+                            <div class="mb-3">
+                                <p class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-envelope me-2 text-primary"></i>
+                                    <a href="mailto:hallo@btplogik.com"
+                                        class="text-decoration-none text-dark">hallo@btplogik.com</a>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="d-flex align-items-center mb-0">
+                                    <i class="bi bi-clock me-2 text-primary"></i>
+                                    Mon – Fri: 9:00 AM – 6:00 PM
+                                </p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
-                        <h4 class="mb-3">Head office</h4>
-
-                        <p>Bay St &amp;, Larkin St, San Francisco, CA 94109, United States</p>
-
-                        <hr>
-
-                        <p class="d-flex align-items-center mb-1">
-                            <span class="me-2">Phone</span>
-
-                            <a href="tel: 305-240-9671" class="site-footer-link">
-                                305-240-9671
-                            </a>
-                        </p>
-
-                        <p class="d-flex align-items-center">
-                            <span class="me-2">Email</span>
-
-                            <a href="mailto:hallo@btplogik.com" class="site-footer-link">
-                                hallo@btplogik.com
-                            </a>
-                        </p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mx-auto">
-                        <h4 class="mb-3">Dubai office</h4>
-
-                        <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
-
-                        <hr>
-
-                        <p class="d-flex align-items-center mb-1">
-                            <span class="me-2">Phone</span>
-
-                            <a href="tel: 110-220-3400" class="site-footer-link">
-                                110-220-3400
-                            </a>
-                        </p>
-
-                        <p class="d-flex align-items-center">
-                            <span class="me-2">Email</span>
-
-                            <a href="mailto:hallo@btplogik.com" class="site-footer-link">
-                                hallo@btplogik.com
-                            </a>
-                        </p>
-                    </div>
-
                 </div>
             </div>
         </section>
+
     </main>
 
-    <footer class="site-footer section-padding">
+    <footer class="site-footer section-padding bg-white text-dark">
         <div class="container">
             <div class="row">
 
+                <!-- Brand -->
                 <div class="col-lg-3 col-12 mb-4 pb-2">
-                    <a class="navbar-brand mb-2" href="index.html">
+                    <a class="navbar-brand mb-2 text-dark" href="#home">
                         <i class="bi-back"></i>
-                        <span>Topic</span>
+                        <span>BTPLogiK</span>
                     </a>
+                    <p class="small">
+                        Empowering businesses with secure, scalable, and intelligent SAP BTP solutions.
+                    </p>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-6">
-                    <h6 class="site-footer-title mb-3">Resources</h6>
-
+                <!-- Resources -->
+                <div class="col-lg-3 col-md-4 col-6 text-center">
+                    <h6 class="site-footer-title mb-3">Explore</h6>
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Home</a>
+                            <a href="#home" class="site-footer-link">Home</a>
                         </li>
-
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">How it works</a>
+                            <a href="#services" class="site-footer-link">Services</a>
                         </li>
-
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">FAQs</a>
+                            <a href="#usecases" class="site-footer-link">Use Cases</a>
                         </li>
-
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact</a>
+                            <a href="#about" class="site-footer-link">About Us</a>
+                        </li>
+                        <li class="site-footer-link-item">
+                            <a href="#contact" class="site-footer-link">Contact</a>
                         </li>
                     </ul>
                 </div>
 
+                <!-- Contact -->
                 <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
-                    <h6 class="site-footer-title mb-3">Information</h6>
+                    <h6 class="site-footer-title mb-3">Get in Touch</h6>
 
-                    <p class="text-white d-flex mb-1">
-                        <a href="tel: 305-240-9671" class="site-footer-link">
-                            305-240-9671
-                        </a>
+                    <p class="d-flex align-items-center mb-1">
+                        <i class="bi-telephone me-2"></i>
+                        <a href="tel:+923001234567" class="site-footer-link text-dark">+92 300 1234567</a>
                     </p>
 
-                    <p class="text-white d-flex">
-                        <a href="mailto:info@company.com" class="site-footer-link">
-                            info@company.com
-                        </a>
+                    <p class="d-flex align-items-center mb-1">
+                        <i class="bi-envelope me-2"></i>
+                        <a href="mailto:hello@btplogik.com" class="site-footer-link text-dark">hello@btplogik.com</a>
+                    </p>
+
+                    <p class="d-flex align-items-center">
+                        <i class="bi-geo-alt me-2"></i>
+                        <a class="site-footer-link text-dark">74-G Johar Town, Lahore, Pakistan</a>
                     </p>
                 </div>
 
+
+                <!-- Language & Social -->
                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    <div class="dropdown mb-3">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            English</button>
-
+                            English
+                        </button>
                         <ul class="dropdown-menu">
-                            <li><button class="dropdown-item" type="button">Thai</button></li>
-
-                            <li><button class="dropdown-item" type="button">Myanmar</button></li>
-
-                            <li><button class="dropdown-item" type="button">Arabic</button></li>
+                            <li><button class="dropdown-item" type="button">Deutsch</button></li>
+                            <li><button class="dropdown-item" type="button">Français</button></li>
+                            <li><button class="dropdown-item" type="button">عربي</button></li>
                         </ul>
                     </div>
 
-                    <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
+                    <!-- <div class="social-icons d-flex mb-3">
+                        <a href="https://www.linkedin.com/company/btplogik" target="_blank"
+                            class="me-3 text-dark bi-linkedin"></a>
+                        <a href="https://www.facebook.com/btplogik" target="_blank"
+                            class="me-3 text-dark bi-facebook"></a>
+                        <a href="https://www.instagram.com/btplogik" target="_blank"
+                            class="me-3 text-dark bi-instagram"></a>
+                        <a href="https://twitter.com/btplogik" target="_blank" class="text-dark bi-twitter"></a>
+                    </div> -->
 
+                    <p class="copyright-text mt-lg-5 mt-4">
+                        © <span id="year"></span> BTPLogiK. All rights reserved.
                     </p>
-
                 </div>
 
             </div>
         </div>
     </footer>
+
+    <script>
+        // Auto-update year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+
 
 
     <!-- JAVASCRIPT FILES -->
