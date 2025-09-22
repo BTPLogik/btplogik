@@ -21,8 +21,9 @@ https://templatemo.com/tm-590-topic-listing
   --border-color: #7fffd4;
   --link-hover-color: #13547a;
 
-  --body-font-family: 'Open Sans', sans-serif;
-  --title-font-family: 'Montserrat', sans-serif;
+  --body-font-family: 'Inter', sans-serif;
+  --title-font-family: 'Poppins', sans-serif;
+
 
   --h1-font-size: 58px;
   --h2-font-size: 46px;
@@ -597,6 +598,10 @@ strong {
   right: 0;
   left: 0;
   padding: 30px;
+}
+
+.custom-block ul{
+  margin-top: 20px;
 }
 
 .social-share {
